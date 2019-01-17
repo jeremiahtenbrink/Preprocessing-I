@@ -1,0 +1,25 @@
+.borderRadius(@size: 1rem) {
+  border-radius: @size;
+}
+
+.boxShadowDark(@opacity: .2, @blend: 3px, @x: -1px, @y: 5px, @size: 1px) {
+  box-shadow: @x @y @size @blend rgba(0, 0, 0, @opacity);
+}
+
+.textShadow(@opacity: .2, @blend: 2px, @x: -3px, @y: 5px) {
+  text-shadow: @x @y @blend rgba(black, @opacity);
+}
+
+.textGradient(@size: 5rem, @color1:@primary3 , @color2: @tertiary4) {
+  font-size: @size;
+  background-image: linear-gradient(to bottom right,@color1, @color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+// font weight either 400 or 700
+.cursiveFont(@weight: 400) {
+  font-family: 'Dancing Script', cursive;
+  font-weight: @weight;
+}
