@@ -1,0 +1,46 @@
+.experience{
+  max-width: 62.5rem;// 1000px at 16px per rem
+  width: 90%;
+  height: min-content;
+  background-color: @grey2;
+  margin: 0 auto;
+  .borderRadius();
+  .boxShadowDark();
+
+
+  &__grouping{
+    margin: 2rem;
+    padding-top: 2rem;
+    &__heading{
+      .cursiveFont();
+      text-align: left;
+      font-size: @mediumFontSize;
+      border-bottom: 1px solid @complement5;
+      padding-bottom: .6rem;
+    }
+
+    &__list{
+
+    }
+
+    &__list-item{
+      font-size: @smallFontSize;
+      line-height: 1.4;
+      margin: 0 2rem;
+    }
+
+    .bullet {
+      .fa-icon;
+      .fas;
+
+      padding-right: 1rem;
+      color: @complement5;
+
+      &:before {
+        content: @fa-var-ellipsis-h;
+      }
+    }
+  }
+
+
+}

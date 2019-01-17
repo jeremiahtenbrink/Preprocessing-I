@@ -1,0 +1,64 @@
+.top-intro {
+  width: 60%;
+  margin: 4rem auto;
+  display: flex;
+  background-color: @grey2;
+  .borderRadius();
+  .boxShadowDark;
+  z-index: -5;
+  padding: 2rem 1rem;
+
+
+
+  &__picture{
+    width: 60%;
+    margin: 2rem 4rem;
+    height: auto;
+    background-image: radial-gradient( circle  closest-side ,transparent, @grey2);
+    z-index: 1;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+      z-index: -1;
+
+
+    }
+
+
+  }
+
+  &__info {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__name {
+
+    margin-top: 2rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+
+      text-align: left;
+      .cursiveFont();
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid @complement4 ;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.8rem;
+  }
+
+  &__buton {
+
+  }
+
+}

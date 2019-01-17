@@ -1,0 +1,47 @@
+.highlights {
+  background-color: @grey2;
+  max-width: 62.5rem;
+  width: 90%;
+  margin: 0 auto;
+  .borderRadius();
+  .boxShadowDark();
+
+  .highlights-list {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .highlights__title {
+    padding-bottom: 1rem;
+    font-size: 4rem;
+    margin: 2rem 4rem;
+    padding-top: 2rem;
+    .cursiveFont();
+    border-bottom: 1px solid @complement5
+  }
+
+  .highlights-list-item {
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    letter-spacing: 1.2px;
+  }
+
+
+
+  .bullet {
+    .fa-icon;
+    .fas;
+
+    padding-right: 1rem;
+    color: @complement5;
+
+    &:before {
+      content: @fa-var-ellipsis-h;
+    }
+  }
+
+}
