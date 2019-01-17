@@ -4510,11 +4510,20 @@ a {
 .btn {
   padding: 0.6rem 1.5rem;
   border-radius: 20px;
-  border: 2px solid #2b2142;
+  border: 1px solid #2b2142;
   margin-top: 2rem;
   font-size: 1.6rem;
   background-color: #4C5C97;
   box-shadow: -1px 5px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  box-shadow: 0 2px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  background-color: #191e31;
+  color: #d9d9d9;
 }
 .experience {
   max-width: 62.5rem;
@@ -4626,7 +4635,7 @@ a {
   display: none;
 }
 .navigation__button {
-  background-color: #f3f3f3;
+  background-image: linear-gradient(to bottom right, #4C5C97, #42213e);
   height: 7rem;
   width: 7rem;
   position: fixed;
@@ -4637,6 +4646,11 @@ a {
   box-shadow: -1px 5px 1px 3px rgba(0, 0, 0, 0.2);
   text-align: center;
   cursor: pointer;
+}
+.navigation__button:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  box-shadow: 0 2px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .navigation__background {
   height: 6rem;
@@ -4707,7 +4721,7 @@ a {
 .navigation__icon::after {
   width: 3rem;
   height: 2px;
-  background-color: grey;
+  background-color: #f3f3f3;
   display: inline-block;
 }
 .navigation__icon::before,

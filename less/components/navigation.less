@@ -4,7 +4,7 @@
   }
 
   &__button {
-    background-color: @grey1;
+    .backgroundGradient();
     height: 7rem;
     width: 7rem;
     position: fixed;
@@ -15,6 +15,8 @@
     .boxShadowDark();
     text-align: center;
     cursor: pointer;
+
+    .buttonPress();
 
   }
 
@@ -98,7 +100,7 @@
     &::after {
       width: 3rem;
       height: 2px;
-      background-color: @grey5;
+      background-color: @grey1;
       display: inline-block;
     }
 
