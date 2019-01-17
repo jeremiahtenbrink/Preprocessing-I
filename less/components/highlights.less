@@ -1,8 +1,10 @@
 .highlights {
-  background-color: lighten(@secondary3, 10%);
+  background-color: @grey2;
+  max-width: 62.5rem;
   width: 90%;
   margin: 0 auto;
   .borderRadius();
+  .boxShadowDark();
 
   .highlights-list {
     display: flex;
@@ -13,10 +15,12 @@
   }
 
   .highlights__title {
+    padding-bottom: 1rem;
     font-size: 4rem;
     margin: 2rem 4rem;
     padding-top: 2rem;
     .cursiveFont();
+    border-bottom: 1px solid @complement5
   }
 
   .highlights-list-item {
@@ -33,7 +37,7 @@
     .fas;
 
     padding-right: 1rem;
-    color: @secondary1;
+    color: @complement5;
 
     &:before {
       content: @fa-var-ellipsis-h;

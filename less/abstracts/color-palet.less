@@ -1,27 +1,64 @@
 // Variables
 
-@primary1: @color;
+@primary1: lighten(@color, 25%);
 @primary2: lighten(@color, 15%);
-@primary3: lighten(@color, 25%);
+@primary3: @color;
 @primary4: darken(@color, 15%);
 @primary5: darken(@color, 25%);
 
-@complement1: spin(@color, 120);
-@complement2: lighten(spin(@color,120), 15%);
-@complement3: lighten(spin(@color,120), 25%);
-@complement4: darken(spin(@color,120), 15%);
-@complement5: darken(spin(@color,120), 25%);
+
+@complement1: lighten(spin(@color, 120), 25%);
+@complement2: lighten(spin(@color, 120), 15%);
+@complement3: spin(@color, 120);
+@complement4: darken(spin(@color, 120), 15%);
+@complement5: darken(spin(@color, 120), 25%);
 
 
-@secondary1: spin(@color, 180);
-@secondary2: lighten(spin(@color,180), 15%);
-@secondary3: lighten(spin(@color,180), 25%);
-@secondary4: darken(spin(@color,180), 15%);
-@secondary5: darken(spin(@color,180), 25%);
+@secondary1: lighten(spin(@color, 180), 25%);
+@secondary2: lighten(spin(@color, 180), 15%);
+@secondary3: spin(@color, 180);
+@secondary4: darken(spin(@color, 180), 15%);
+@secondary5: darken(spin(@color, 180), 25%);
 
 
-@tertiary1: spin(@color, 80);
-@tertiary2: lighten(spin(@color,80), 15%);
-@tertiary3: lighten(spin(@color,80), 25%);
-@tertiary4: darken(spin(@color,80), 15%);
-@tertiary5: darken(spin(@color,80), 25%);
+@tertiary1: lighten(spin(@color, 80), 25%);
+@tertiary2: lighten(spin(@color, 80), 15%);
+@tertiary3: spin(@color, 80);
+@tertiary4: darken(spin(@color, 80), 15%);
+@tertiary5: darken(spin(@color, 80), 25%);
+
+@rightAnalogous1: lighten(spin(@color, 30), 25%);
+@rightAnalogous2: lighten(spin(@color, 30), 15%);
+@rightAnalogous3: spin(@color, 30);
+@rightAnalogous4: darken(spin(@color, 30), 15%);
+@rightAnalogous5: darken(spin(@color, 30), 25%);
+
+@leftAnalogous1: lighten(spin(@color, -30), 25%);
+@leftAnalogous2: lighten(spin(@color, -30), 15%);
+@leftAnalogous3: spin(@color, -30);
+@leftAnalogous4: darken(spin(@color, -30), 15%);
+@leftAnalogous5: darken(spin(@color, -30), 25%);
+
+@leftSplitComplementary1: lighten(spin(@color, 150), 25%);
+@leftSplitComplementary2: lighten(spin(@color, 150), 15%);
+@leftSplitComplementary3: spin(@color, 150);
+@leftSplitComplementary4: darken(spin(@color, 150), 15%);
+@leftSplitComplementary5: darken(spin(@color, 150), 25%);
+
+
+@rightSplitComplementary1: lighten(spin(@color, -150), 25%);
+@rightSplitComplementary2: lighten(spin(@color, -150), 15%);
+@rightSplitComplementary3: spin(@color, -150);
+@rightSplitComplementary4: darken(spin(@color, -150), 15%);
+@rightSplitComplementary5: darken(spin(@color, -150), 25%);
+
+
+
+@grey1: lighten(@grey5, 45%);
+@grey2: lighten(@grey5, 35%);
+@grey3: lighten(@grey5, 25%);
+@grey4: lighten(@grey5, 15%);
+@grey5: grey;
+@grey6: darken(@grey5, 15%);
+@grey7: darken(@grey5, 25%);
+
